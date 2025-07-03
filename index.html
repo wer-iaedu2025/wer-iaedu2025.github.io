@@ -1,55 +1,202 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Primeira Página GitHub.io</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        h1 {
-            color: #007bff;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: inline-block; /* Para centralizar o bloco */
-        }
-    </style>
+    <title>Ética e Regulação em IA na Educação - CBIE 2025</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<a href="#about" class="skip-link">Pular para o conteúdo principal</a>
+<div id="progress-bar"></div>
 <body>
-    <div class="container">
-        <h1>Olá, Mundo!</h1>
-        <p>Bem-vindo à minha página GitHub.io!</p>
-        <p>Esta é uma página simples para você começar.</p>
-        <p>Data e Hora atuais: <span id="datetime"></span></p>
-    </div>
+    <section id="logos">
+        <div class="container" id="logo">
+            <a href="https://cbie.sbc.org.br/2025/" target="_blank" rel="noopener noreferrer">
+            <img id="logo_header" src="https://cbie.sbc.org.br/2025/wp-content/uploads/2025/04/logo_cbie_novo-1024x931.png" alt="logo_cbie_novo-1024x931">
+          </a>
+          <img id="infos" src="https://cbie.sbc.org.br/2025/wp-content/uploads/2025/03/Tema.png" alt="">
+        </div>
+      </section>
+      
+    <header>
+        <div class="container">
+            <h1>WER-IAEdu</h1>
+            <h1>
+                I Workshop de <span class="highlight">Ética e Regulação</span> em <span class="highlight">Inteligência Artificial</span> na Educação
+            </h1>
+            <h2 class="subtitle">Construindo Diretrizes Colaborativas para o Contexto Brasileiro</h2>
+            <div class="header-bar"></div>
+            <p class="event">Evento Satélite do CBIE 2025</p>
+            <p class="event"><strong> Curitiba 24 a 28 de novembro de 2025</strong>
+            </p>
+        </div>
+    </header>
 
-    <script>
-        // Função para exibir a data e hora atuais
-        function updateDateTime() {
-            const now = new Date();
-            const options = {
-                year: 'numeric', month: 'long', day: 'numeric',
-                hour: '2-digit', minute: '2-digit', second: '2-digit',
-                hour12: false // Formato 24 horas
-            };
-            document.getElementById('datetime').textContent = now.toLocaleDateString('pt-BR', options);
-        }
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>Sobre o Workshop</h2>
+                <p>A crescente integração de tecnologias de Inteligência Artificial (IA) na Educação brasileira demanda uma discussão urgente sobre aspectos éticos e regulatórios específicos para este domínio. Convidamos pesquisadores, educadores, desenvolvedores, estudantes, profissionais de tecnologia educacional, especialistas em direito digital e formuladores de políticas públicas a apresentarem trabalhos que contribuam para o desenvolvimento responsável e ético da IA na educação brasileira.</p>
+                <p>Este workshop busca fomentar discussões estruturadas sobre como utilizar IA de forma responsável e eficaz no contexto educacional, considerando as particularidades do sistema educacional brasileiro e o atual cenário regulatório nacional (PL 2.338/2023, LGPD) e internacional (AI Act da UE, diretrizes UNESCO).</p>
+                <div class="highlight-cta" style="margin-top: 30px; text-align: center;">
+                    <strong style="font-size: 1.25rem; color: #8348dc;">Participe desta Discussão Fundamental para o Futuro da Inteligência Artificial na Educação Brasileira!</strong>
+                </div>
+            </div>
+        </section>
 
-        // Chama a função quando a página carrega e atualiza a cada segundo
-        updateDateTime();
-        setInterval(updateDateTime, 1000);
-    </script>
+        <section id="topics">
+            <div class="container">
+                <h2>Tipos de Contribuições Aceitas</h2>
+                <p>Convidamos a submissão de trabalhos que abordem aspectos relacionados à ética e regulação de IA na Educação, incluindo, mas não se limitando a:</p>
+                <ul>
+                    <li>Análises regulatórias: estudos sobre marcos legais existentes e suas implicações para IA educacional.</li>
+                    <li>Casos de estudo: experiências práticas de implementação ética de IA em contextos educacionais brasileiros.</li>
+                    <li>Position papers: posicionamentos sobre questões emergentes e direções futuras da área.</li>
+                    <li>Propostas metodológicas: frameworks e metodologias para avaliação ética de sistemas de IA educacional.</li>
+                    <li>Planos de ação: propostas de ações para apoiar a ética e regulação da IA na Educação.</li>
+                    <li>Revisões sistemáticas: levantamentos sobre estado da arte em ética e regulação de IA educacional.</li>
+                    <li>Ensaios reflexivos: análises teóricas sobre dilemas éticos específicos da área.</li>
+                    <li>Propostas de políticas: diretrizes institucionais ou sugestões para políticas públicas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="activities">
+            <div class="container">
+                <h2>PROGRAMAÇÃO</h2>
+                <p>O workshop terá duração de 6 horas (1 dia inteiro), com a seguinte programação:</p>
+                <div class="schedule">
+                    <div class="period">
+                        <h3>Manhã (3 horas)</h3>
+                        <ul>
+                            <li><strong>Mesa-redonda de Abertura (1h30):</strong> "Estado Atual da Regulamentação de IA no Brasil e no Mundo".</li>
+                            <li><strong>Apresentações de Artigos (1h30):</strong> Sessões técnicas com apresentação dos trabalhos aceitos.</li>
+                        </ul>
+                    </div>
+                    <div class="period">
+                        <h3>Tarde (3 horas)</h3>
+                        <ul>
+                            <li><strong>Organização de Grupos Temáticos (30min):</strong> Organização dos participantes por temas de interesse.</li>
+                            <li><strong>Discussões em Grupos Temáticos (1h30):</strong> Trabalho colaborativo em pequenos grupos.</li>
+                            <li><strong>Apresentações Tipo Pitch (45min):</strong> Cada grupo apresenta seus resultados.</li>
+                            <li><strong>Discussão Final e Próximas Ações (15min):</strong> Consolidação e definição de próximos passos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="submissions">
+            <div class="container">
+                <h2>Forma de Exibição e Submissão</h2>
+                <ul>
+                    <li>Os artigos devem obedecer ao formato adotado pelo CBIE (modelo estabelecido pela SBC).</li>
+                    <li>Idiomas aceitos: português, inglês ou espanhol.</li>
+                    <li>Número de páginas: entre 6 e 10 páginas (excluindo referências).</li>
+                    <li>Submissão anônima: omitir obrigatoriamente a identificação dos autores ou quaisquer informações que permitam inferir a autoria.</li>
+                    <li>Artigos submetidos não devem ter sido publicados anteriormente, ou estar em processo de avaliação e/ou edição para publicação em outro meio.</li>
+                    <li>Todos os trabalhos devem demonstrar relevância para o contexto brasileiro.</li>
+                    <li>As submissões deverão ser realizadas, exclusivamente, em formato PDF por meio do sistema JEMS3.</li>
+                    <li>Submissões que desrespeitarem as prerrogativas ou os prazos serão automaticamente rejeitadas.</li>
+                </ul>
+                <a href="https://jems3.sbc.org.br/wer-iaedu2025" class="cta-button" target="_blank" rel="noopener">Submeta seu Artigo</a>
+                <p><small>O link para submissão está disponível via JEMS3.</small></p>
+                <div id="submissions-flex">
+                    <div class="submission-checklist">
+                        <h3>Verificação Antes da Submissão:</h3>
+                        <p>Antes de efetuar a submissão, observe se o artigo:</p>
+                        <ul>
+                            <li>Foi minuciosamente revisado quanto à escrita e apresentação</li>
+                            <li>Obedece ao modelo estabelecido pela SBC, conforme descrito na página do evento</li>
+                            <li>Contém entre 6 e 10 páginas, excluindo referências</li>
+                            <li>Apresenta imagens em boa qualidade e com textos legíveis</li>
+                            <li>Omite informações que permitam inferir a autoria (nomes dos autores, instituições, cidades, grupos de pesquisa), seja no texto, imagens ou propriedades do PDF</li>
+                            <li>Cita trabalhos próprios como se fossem de terceiros para manter anonimato (ex: "conforme demonstrado por Silva et al. (2023)..." ao invés de "conforme demonstramos anteriormente..."). Utilize [OMITIDO] apenas quando for explicitamente necessário indicar que o trabalho atual é uma extensão de trabalho anterior dos mesmos autores</li>
+                            <li>Não foi publicado anteriormente ou está em processo de avaliação em outro meio</li>
+                            <li>Demonstra relevância para o contexto educacional brasileiro</li>
+                            <li>Contribui para as discussões sobre uso responsável de IA na educação</li>
+                        </ul>
+                        <p><strong>Importante:</strong> Informe no formulário do JEMS3 o nome de todos os autores. <strong>Não será permitida</strong> a inclusão de autores após o prazo de submissão.</p>
+                    </div>
+                    <div class="submission-evaluation">
+                        <h3>Avaliação</h3>
+                        <ul>
+                            <li>Cada artigo será avaliado anonimamente por, pelo menos, dois membros do Comitê de Programa.</li>
+                            <li>Critérios de avaliação: originalidade, relevância para o contexto brasileiro, adequação à proposta do workshop, qualidade técnica, apresentação e potencial de contribuição para as discussões.</li>
+                            <li>Eventualmente, alguns autores poderão ser convocados a avaliar outros artigos, colaborando com o processo de revisão por pares.</li>
+                            <li>Os trabalhos aceitos deverão ser apresentados presencialmente no workshop.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="submission-publication">
+                    <h3>Publicação</h3>
+                    <p>Os artigos aceitos serão incluídos nos Anais do Workshop de Ética e Regulação em Inteligência Artificial na Educação, com acesso aberto pela biblioteca digital SBC Open Library (SOL), desde que seja respeitado o prazo de envio da versão final e ocorra a inscrição de, pelo menos, um dos autores no CBIE, envio de comprovante de pagamento da taxa de publicação e envio do comprovante de pagamento de inscrição e termo de autorização de publicação via sistema JEMS3.</p>
+                </div>
+            </div>
+        </section>
+        <section id="dates">
+            <div class="container">
+                <h2>Datas Importantes</h2>
+                <ul>
+                    <li><strong>21/07/2025:</strong> Data limite para envio de trabalhos</li>
+                    <li><strong>21/08/2025:</strong> Notificação dos trabalhos aceitos</li>
+                    <li><strong>25/08/2025:</strong> Data limite para envio das versões finais</li>
+                    <li><strong>01/09/2025:</strong> Data limite para inscrição de pelo menos um autor por trabalho aceito e envio do comprovante de pagamento e termo de autorização de publicação</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Para dúvidas sobre o workshop, entre em contato através do e-mail: <a href="mailto:wer-iaedu@googlegroups.com">wer-iaedu@googlegroups.com</a> </p>
+            </div>
+        </section>
+        <section id="coordinators">
+            <div class="container">
+                <h2>Coordenação</h2>
+                <div class="coordinator-list">
+                    <div class="coordinator">
+                        <img src="Patricia.jpg" alt="Foto da Coordenadora Patrícia Jaques">
+                        <h3>Profa. Dra. Patrícia A. Jaques</h3>
+                        <p>Universidade Federal do Paraná - UFPR</p>
+                        <p><a href="mailto:patricia.jaques@gmail.com">patricia.jaques@gmail.com</a></p>
+                    </div>
+                    <div class="coordinator">
+                        <img src="Jéssica.png" alt="Foto da Coordenadora Jéssica Figueiredo">
+                        <h3>Profa. Me. Jéssica Figueiredo</h3>
+                        <p>Universidade do Estado do Rio Grande do Norte - UERN</p>
+                        <p><a href="mailto:jessicaneiva@uern.br">jessicaneiva@uern.br</a></p>
+                    </div>
+                    <div class="coordinator">
+                        <img src="Torrezao.jpg" alt="Foto do Coordenador Newarney Costa">
+                        <h3>Prof. Dr. Newarney Torrezao da Costa</h3>
+                        <p>Instituto Federal Goiano - IF Goiano</p>
+                        <p><a href="mailto:newarney.costa@ifgoiano.edu.br">newarney.costa@ifgoiano.edu.br</a></p>
+                    </div>
+                    <div class="coordinator">
+                        <img src="Sean.jpg" alt="Foto do Coordenador Sean Siqueira">
+                        <h3>Prof. Dr. Sean Siqueira</h3>
+                        <p>Universidade Federal do Estado do Rio de Janeiro - UNIRIO</p>
+                        <p><a href="mailto:sean@uniriotec.br">sean@uniriotec.br</a></p>
+                    </div>
+                    <div class="coordinator">
+                        <img src="William.png" alt="Foto do Coordenador Williamson Silva">
+                        <h3>Prof. Dr. Williamson Silva</h3>
+                        <p>Universidade Federal do Pampa - UNIPAMPA</p>
+                        <p><a href="mailto:williamson.silva@gmail.com">williamson.silva@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Workshop Ética e Regulação em IA na Educação. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">&#8679;</button>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
