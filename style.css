@@ -77,13 +77,12 @@ main h2 {
 #logo_header {
     width: 15vw;
     height: 27vh;
-    box-shadow: 0 2px 4px rgba(131,72,220,0.08);
     transition: transform 0.3s ease;
-    cursor: pointer; /* opcional: mostra que é clicável */
+    cursor: pointer; 
 }
 
 #logo_header:hover {
-    transform: scale(1.05); /* aumenta 5% */
+    transform: scale(1.05); 
 }
 #infos{
     width: 30vw;
@@ -93,10 +92,17 @@ main h2 {
 #logo {
     display: flex;
     justify-content: center;
-    align-items: center; /* se quiser também centralizar verticalmente */
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     height: 50vh;
+}
+#logo_header, #infos, #logo img {
+    width: 90vw;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 #logos{
     border-bottom: 5px solid #6a2ab8;
@@ -388,5 +394,66 @@ footer {
         width: 40px;
         height: 40px;
         font-size: 1.5rem;
+    }
+    #logo {
+        flex-direction: column;
+        gap: 8px;
+        height: auto;
+        align-items: center;
+    }
+    #logo_header, #infos, #logo img {
+        width: 60vw;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    header h1 {
+        font-size: 1.5rem;
+        padding: 0 8px;
+    }
+    header h2 {
+        font-size: 1.1rem;
+        padding: 0 8px;
+    }
+    header .event {
+        font-size: 1rem;
+        padding: 0 8px;
+    }
+    main h2 {
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+        padding: 0 8px;
+    }
+    .container {
+        width: 98%;
+        padding: 0 4px;
+    }
+    main section {
+        padding: 18px 0;
+    }
+    #topics ul li,
+    #submissions ul li,
+    #dates ul li {
+        padding: 10px;
+        font-size: 0.98rem;
+    }
+    .cta-button {
+        padding: 10px 18px;
+        font-size: 1rem;
+    }
+    .schedule,
+    #submissions-flex,
+    .coordinator-list {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .period,
+    .submission-checklist,
+    .submission-evaluation,
+    .coordinator {
+        width: 100%;
+        max-width: 98vw;
     }
 } 
